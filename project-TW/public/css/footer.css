@@ -1,0 +1,23 @@
+@keyframes footerBlink {
+  0% {
+    color: grey;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: grey;
+  }
+}
+
+.copyrigth {
+  margin: 0;
+  animation: footerBlink 1s infinite;
+}
+
+footer{
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 10px 0;
+}
