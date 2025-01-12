@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Class</title>
+    <link rel="stylesheet" href="public/css/style.css" />
+    <link rel="stylesheet" href="public/css/navbar.css" />
+    <link rel="stylesheet" href="public/css/footer.css" />
+    <link rel="stylesheet" href="public/css/servicii.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="navbar-logo">
+        <img src="public/src/logo.png" alt="logo" class="nav-logo" />
+      </a>
+      <button class="navbar-toggle" onclick="toggleNavbar()">☰</button>
+      <ul class="navbar-links">
+        <li><a href="index.html">Acasa</a></li>
+        <li><a href="desprenoi.html">Despre Noi</a></li>
+        <li class="dropdown">
+          <a href="servicii.html" class="dropbtn">Servicii</a>
+          <div class="dropdown-content">
+            <a href="servicii.html#flexible">Flexible</a>
+            <a href="servicii.html#loyalty">Loyalty</a>
+            <a href="servicii.html#prepaid">Prepaid</a>
+          </div>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="auth.html">Auth</a></li>
+      </ul>
+    </nav>
+
+    <div class="container my-3">
+      <div class="text-center">
+        <h1>Serviciile noastre</h1>
+        <!-- animatie  -->
+        <p id="gym">🏆💪🏋️</p>
+
+      </div>
+
+      <div class="text-center" id="flexible">
+        <h2 class="subtitle">FLEXIBLE</h2>
+      </div>
+      <div class="row p-1">
+        <div class="col-md-6 col-sm-12">
+          <h3 class="primary">
+            DE CE SĂ ALEGI PLATA LUNARĂ CU PRELUNGIRE AUTOMATĂ
+          </h3>
+          <p>
+            Abonamentul lunar Flexible este soluția perfectă pentru tine, pentru
+            că îți oferă acces nelimitat la toate facilitățile și se prelungește
+            automat pentru ca tu să te poți concentra asupra obiectivelor tale
+            de fitness.
+          </p>
+
+        </div>
+        <div class="col-md-6 col-sm-12 p-3">
+          <img src="public/src/flexible.webp" alt="" class="img-fluid" />
+        </div>
+      </div>
+
+      <div class="text-center" id="loyalty">
+        <h2  class="subtitle">LOYALTY</h2>
+      </div>
+      <div class="row p-1">
+        <div class="col-md-6 col-sm-12">
+          <h3 class="primary">
+            DE CE SĂ ALEGI ABONAMENTUL ANUAL CU PLATĂ LUNARĂ FIXĂ
+          </h3>
+          <p>
+            Pentru că începând cu luna a 4-a vei beneficia de prețul de
+            loialitate, care poate fi păstrat și după perioada contractuală de
+            12 luni, atât timp cât se păstrează activă plata recurentă.
+          </p>
+        </div>
+        <div class="col-md-6 col-sm-12 p-3">
+          <img src="public/src/loyalty.webp" alt="" class="img-fluid" />
+        </div>
+      </div>
+
+      <div class="text-center"  id="prepaid">
+        <h2  class="subtitle">PREPAID</h2>
+      </div>
+      <div class="row p-1">
+        <div class="col-md-6 col-sm-12">
+          <h3 class="primary">DE CE SĂ ALEGI ABONAMENTUL ANUAL PRE-PLĂTIT</h3>
+          <p>
+            Pentru că beneficiezi de cel mai bun preț mediu lunar la toate
+            categoriile de membru: Bronze, Silver, Gold, Platinum și W. Plătești
+            anual în avans, te antrenezi când și cât timp vrei și plătești mai
+            puțin.
+          </p>
+        </div>
+        <div class="col-md-6 col-sm-12 p-3">
+          <img src="public/src/prepaid.webp" alt="" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <p id="datetime" style="margin: 0"></p>
+        <p class="copyrigth">&copy; World Class</p>
+      </div>
+    </footer>
+    <script src="public/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+/* - [ ] site-ul trebuie să conțină o tranziție care implică schimbarea mai multor proprietăți la intervale diferite de timp */
+
+.subtitle {
+  color: var(--primary);
+  font-weight: bold;
+  letter-spacing: 5px;
+  position: relative;
+  transition: color 1s ease-in-out;
+}
+
+.subtitle::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--primary);
+  transition: width 0.5s ease-in-out;
+}
+
+.subtitle:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.subtitle:hover::after {
+  width: 100%;
+}
+
+/* - [x] site-ul trebuie să conțină o animație care să modifice mai multe proprietăți ale aceluiași element */
+/* animatie  */
+#gym {
+  font-size: 45px;
+  margin: 3rem;
+  display: inline-block;
+  animation: spinAndGrow 3s infinite ease-in-out;
+}
+
+@keyframes spinAndGrow {
+  0% {
+    transform: rotate(0deg) scale(1); 
+    color: var(--primary); 
+  }
+  50% {
+    transform: rotate(180deg) scale(1.5);
+    color: var(--success); 
+  }
+  100% {
+    transform: rotate(360deg) scale(1); 
+    color: var(--primary); 
+  }
+}
